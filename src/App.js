@@ -8,6 +8,7 @@ import Navbar from "./Tutorials/part-2/components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Create from "./pages/Create";
 import BlogDetails from "./Tutorials/part-8/BlogDetails";
+import NotFount from "./Tutorials/part-9/NotFount";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route ex path="/" element={<Home />} />
             <Route path="/create" element={<Create />} />
             <Route path="/blogs/:id" element={<BlogDetails />} />
+            <Route path="*" element={<NotFount />} />
           </Routes>
         </div>
       </div>

@@ -6,6 +6,8 @@ const TestData = () => {
   const { blogs, isPending, error, handleDelete } = UseFetch(
     "http://localhost:8000/blogs"
   );
+  // const history = useNavigate();
+
   return (
     <div className="home">
       {error && <div>{error}</div>}
