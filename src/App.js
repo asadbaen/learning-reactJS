@@ -7,6 +7,7 @@ import Navbar from "./Tutorials/part-2/components/Navbar";
 // import Home from "./Tutorials/part-2/pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Create from "./pages/Create";
+import BlogDetails from "./Tutorials/part-8/BlogDetails";
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
         <Navbar />
         <div className="content">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route ex path="/" element={<Home />} />
             <Route path="/create" element={<Create />} />
+            <Route path="/blogs/:id" element={<BlogDetails />} />
           </Routes>
         </div>
       </div>

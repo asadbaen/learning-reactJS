@@ -32,31 +32,7 @@ const UseFetch = (url) => {
     // return () => console.log("Cleanup!");
     return () => abortCont.abort();
   }, [url]);
-  //   useEffect(() => {
-  //     setTimeout(() => {
-  //       console.log("running !!!");
-  //       fetch(url)
-  //         .then((res) => {
-  //           console.log(res);
-  //           if (!res.ok) {
-  //             throw Error("cloud not fetch the data for that resource");
-  //           }
-  //           return res.json();
-  //         })
-  //         .then((data) => {
-  //           console.log(data);
-  //           setBlogs(data);
-  //           setIsPending(false);
-  //           setError(null);
-  //         })
-  //         .catch((err) => {
-  //           //   setIsPending(false);
-  //           console.log(err.message);
-  //           setError(err.message);
-  //         })
-  //         .finally(() => setIsPending(false));
-  //     }, 1000);
-  //   }, [url]);
+  
   const handleDelete = (id) => {
     // console.log(blogs);
     // const newsBlogs = blogs.filter((blog) => blog.id !== id);
